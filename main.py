@@ -77,6 +77,7 @@ async def get_weather(latitude, longitude, api_key):
         }
         response = requests.get('https://yandex.kz/pogoda/', params=params, cookies=cookies, headers=headers)
         soap = BeautifulSoup(response.text, 'html.parser')
+        city = soap.find('h1', class_='title title_level_1 header-title__title').text
         forecast_now = soap.find('div', class_='temp fact__temp fact__temp_size_s').find('span',
                                                                                          class_='temp__value temp__value_with-unit').text
         feelings_now = soap.find('div', class_='link__feelings fact__feelings')
@@ -91,6 +92,7 @@ async def get_weather(latitude, longitude, api_key):
             'Давление: ')
 
         return {
+            'city': city,
             "weather": forecast_now,
             'condition': condition,
             'feeling': feeling_temp,
