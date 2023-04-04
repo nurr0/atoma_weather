@@ -78,6 +78,12 @@ async def get_weather(latitude, longitude):
         'Влажность: ')
     press = soap.find('div', class_='term term_orient_v fact__pressure').find('span', class_='a11y-hidden').text.lstrip(
         'Давление: ')
+    two_hours = soap.find('ul', class_='swiper-wrapper').find(
+        'li', class_='fact__hour swiper-slide').find(
+        'div', class_='fact__hour-temp').text
+    two_hours_rain = soap.find('p', class_='maps-widget-fact__title').text
+    # tomorrow = soap.find('div', class_='forecast-briefly card cdThqq5Q forecast-briefly_js_inited')
+    # print(tomorrow)
 
     return [{
         'city': city,
@@ -86,5 +92,7 @@ async def get_weather(latitude, longitude):
         'feeling': feeling_temp,
         'wind': wind,
         'wetness': wet,
-        'pressure': press
+        'pressure': press,
+        'two_hours': two_hours,
+        'two_hours_rain': two_hours_rain,
     }]

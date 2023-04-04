@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="feffdec1-812b-4290-a497-f887617e5008" name="Changes" comment="added weather by city name v2">
+    <list default="true" id="feffdec1-812b-4290-a497-f887617e5008" name="Changes" comment="fixed statuses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/weather.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,8 @@
       <workItem from="1680260976564" duration="6114000" />
       <workItem from="1680268342571" duration="1671000" />
       <workItem from="1680516005330" duration="4964000" />
-      <workItem from="1680520986198" duration="3576000" />
+      <workItem from="1680520986198" duration="4293000" />
+      <workItem from="1680598440355" duration="2881000" />
     </task>
     <task id="LOCAL-00001" summary="cors-allowed">
       <created>1680268421832</created>
@@ -147,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680522651352</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed statuses">
+      <created>1680524677416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680524677416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +177,8 @@
     <MESSAGE value="city added" />
     <MESSAGE value="added weather by city name" />
     <MESSAGE value="added weather by city name v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="added weather by city name v2" />
+    <MESSAGE value="fixed statuses" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed statuses" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fastApiProject$service.coverage" NAME="service Coverage Results" MODIFIED="1680520136311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
